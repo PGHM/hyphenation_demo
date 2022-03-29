@@ -5,3 +5,5 @@ In any app running on iOS15 any text with soft hyphens will get automatically hy
 So if you have a long word, for example "Uncopyrightable" and we have a soft hyphen so that it would look like this "Un-copyrightable" it can also look like this "Uncopy-rightable" or "Uncopyright-able" even when there is only one soft hyphen present.
 
 This project uses nice Finnish words to demonstrate the effect.
+
+You should run this project with iPhone SE (3rd generation) with normal text size to get the desired effect.
