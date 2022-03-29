@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HyphenationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEc-UR-9B8">
+                                <rect key="frame" x="16" y="154" width="343" height="142.5"/>
+                                <mutableString key="text">L­entokonesuihkuturbiinimoottoriapumekaanikkoaliupseerioppilas ei ehtinyt e­päjärjestelmällistyttämättömyydellänsäkään p­eruspalveluliikelaitoskuntayhtymän kokoukseen, koska suurehko k­olmivaihekilowattituntimittari oli juuttunut kiinni k­äsipyyherullajärjestelmään</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jce-5C-LAS">
+                                <rect key="frame" x="16" y="16" width="343" height="122"/>
+                                <string key="text">Example project to demonstrate hyphenation bug. The Finnish text below should have hyphens only after first character of each word, where the soft hyphen is present. (Run on iPhone SE (3rd generation).</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmM-Gn-7kc">
+                                <rect key="frame" x="92" y="389.5" width="191.5" height="31"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Press for local notification"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Press for local notification"/>
+                                <connections>
+                                    <action selector="showFinnishLocalNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cSo-q9-T6j"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The button below will show local notification, which also has unwanted hyphenations." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbo-z5-t3m">
+                                <rect key="frame" x="16" y="312.5" width="343" height="61"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jce-5C-LAS" secondAttribute="trailing" constant="16" id="99o-9G-gjE"/>
+                            <constraint firstItem="QEc-UR-9B8" firstAttribute="top" secondItem="Jce-5C-LAS" secondAttribute="bottom" constant="16" id="FfZ-VG-xj6"/>
+                            <constraint firstItem="tbo-z5-t3m" firstAttribute="top" secondItem="QEc-UR-9B8" secondAttribute="bottom" constant="16" id="JJJ-jR-QzQ"/>
+                            <constraint firstItem="CmM-Gn-7kc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LvU-LQ-ms6"/>
+                            <constraint firstItem="Jce-5C-LAS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NOa-RV-BIT"/>
+                            <constraint firstItem="Jce-5C-LAS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Pxu-Uk-dbz"/>
+                            <constraint firstItem="CmM-Gn-7kc" firstAttribute="top" secondItem="tbo-z5-t3m" secondAttribute="bottom" constant="16" id="X8R-GI-aPB"/>
+                            <constraint firstItem="tbo-z5-t3m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YxI-eJ-UXz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tbo-z5-t3m" secondAttribute="trailing" constant="16" id="btY-5U-8lA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QEc-UR-9B8" secondAttribute="trailing" constant="16" id="ill-Sk-OLt"/>
+                            <constraint firstItem="QEc-UR-9B8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kmP-sy-LD3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="finnishTextLabel" destination="QEc-UR-9B8" id="qgY-br-MMD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
